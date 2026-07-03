@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王多鱼 - 大豆驯化 · 遗传学研究</title>
+  <meta name="description" content="王多鱼 - 南昌大学遗传学硕士，研究方向为大豆驯化">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+
+  <!-- 左侧栏 -->
+  <aside class="sidebar">
+    <div class="sidebar-avatar">🧬</div>
+    <div class="sidebar-name">王多鱼</div>
+    <div class="sidebar-title">南昌大学 · 遗传学硕士</div>
+
+    <ul class="sidebar-nav">
+      <li><a href="#hero" class="active" data-section="hero"><span class="nav-icon">👋</span> 关于我</a></li>
+      <li><a href="#research" data-section="research"><span class="nav-icon">🧬</span> 研究</a></li>
+      <li><a href="#side" data-section="side"><span class="nav-icon">🛠️</span> 个人项目</a></li>
+      <li><a href="#fun" data-section="fun"><span class="nav-icon">🍜</span> 碎碎念</a></li>
+      <li><a href="#contact" data-section="contact"><span class="nav-icon">📮</span> 联系</a></li>
+    </ul>
+
+    <div class="sidebar-social">
+      <a href="https://github.com/orangeUU" target="_blank" title="GitHub">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.425-.135-.345-.72-1.425-1.23-1.71-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.88-.015 3.27 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="mailto:2211736665@qq.com" title="邮箱">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+
+    <div class="sidebar-bottom">
+      © 2026 王多鱼
+    </div>
+  </aside>
+
+  <!-- 移动端顶栏 -->
+  <div class="mobile-header">
+    <div class="mh-brand">🧬 王多鱼</div>
+    <button class="mh-menu-btn" id="menuBtn">☰</button>
+  </div>
+
+  <!-- 移动端导航抽屉 -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="sidebar-avatar" style="width:80px;height:80px;font-size:2rem;margin-bottom:16px;">🧬</div>
+    <div class="sidebar-name" style="margin-bottom:24px;">王多鱼</div>
+    <ul class="sidebar-nav" id="mobileNav">
+      <li><a href="#hero" data-section="hero"><span class="nav-icon">👋</span> 关于我</a></li>
+      <li><a href="#research" data-section="research"><span class="nav-icon">🧬</span> 研究</a></li>
+      <li><a href="#side" data-section="side"><span class="nav-icon">🛠️</span> 个人项目</a></li>
+      <li><a href="#fun" data-section="fun"><span class="nav-icon">🍜</span> 碎碎念</a></li>
+      <li><a href="#contact" data-section="contact"><span class="nav-icon">📮</span> 联系</a></li>
+    </ul>
+  </div>
+
+  <!-- 右侧主内容区 -->
+  <main class="main-content">
+
+    <!-- 关于我 -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-greeting">你好，我是</div>
+      <h1 class="hero-name">王多鱼</h1>
+      <p class="hero-desc">
+        南昌大学遗传学硕士在读，研究大豆驯化。试图理解一颗种子如何被人类选择、驯化、改良，最终成为养活世界的作物。同时也用 AI 做一些提升效率的小工具 —— 毕竟科研人的时间，每一分钟都该花在有价值的事上。
+      </p>
+      <div class="hero-cta">
+        <a href="#research" class="btn btn-primary">了解我的研究 ↓</a>
+        <a href="mailto:2211736665@qq.com" class="btn btn-ghost">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          联系我
+        </a>
+      </div>
+    </section>
+
+    <!-- 研究方向 -->
+    <section id="research" class="section">
+      <h2 class="section-title">研究方向</h2>
+      <p class="section-subtitle">大豆驯化的遗传学机制</p>
+
+      <div class="research-block">
+        <h3>什么是大豆驯化？</h3>
+        <p>野生大豆（Glycine soja）经过数千年的人工选择，演变为今天我们种植的栽培大豆（Glycine max）。这个过程改变了大豆的形态、产量、抗性和适应性 —— 我的课题就是从遗传学角度，揭示驯化过程中哪些基因被选择、如何被选择、以及它们如何塑造了现代大豆。</p>
+      </div>
+
+      <div class="research-block">
+        <h3>我关注的问题</h3>
+        <ul class="research-questions">
+          <li><strong>驯化瓶颈效应</strong> —— 从野生到栽培，大豆经历了多大的遗传多样性损失？</li>
+          <li><strong>关键驯化基因</strong> —— 控制株型、籽粒大小、开花时间等性状的基因是如何被选择的？</li>
+          <li><strong>驯化与改良的分层</strong> —— 驯化阶段选择的地方与现代育种改良选择的地方是否重叠？</li>
+          <li><strong>野生资源的利用</strong> —— 野生大豆中丢失的优异等位基因能否被重新引入栽培种？</li>
+        </ul>
+      </div>
+
+      <div class="research-block">
+        <h3>研究方法</h3>
+        <div class="skills-list">
+          <span class="skill-tag">群体遗传学</span>
+          <span class="skill-tag">全基因组关联分析 (GWAS)</span>
+          <span class="skill-tag">选择信号检测</span>
+          <span class="skill-tag">多组学整合</span>
+          <span class="skill-tag">重测序数据分析</span>
+          <span class="skill-tag">比较基因组学</span>
+          <span class="skill-tag">Python / R 数据分析</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 副业项目 -->
+    <section id="side" class="section">
+      <h2 class="section-title">个人项目</h2>
+      <p class="section-subtitle">兴趣驱动，用 AI 做的一些小工具</p>
+
+      <!-- TimeTracker -->
+      <div class="project-row">
+        <div class="project-screenshot">
+          <img src="images/timetracker-screenshot.png" alt="TimeTracker">
+        </div>
+        <div class="project-info">
+          <h3>TimeTracker</h3>
+          <p class="project-desc">全功能时间管理应用 —— 做科研最怕时间不知不觉就没了，所以我用 AI 做了个工具来管理自己。集计时、任务管理、习惯追踪、日记、统计于一体。</p>
+          <ul class="project-features">
+            <li>计时器（自由计时 + 番茄钟模式）</li>
+            <li>任务管理 & 时间线记录</li>
+            <li>习惯打卡 & 健康模块</li>
+            <li>日记（时间轴 + 情绪 + 天气）</li>
+            <li>统计图表 & 数据导出</li>
+            <li>支持 PWA / Electron / Android</li>
+          </ul>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Electron</span><span>PWA</span><span>AI 驱动开发</span>
+          </div>
+          <div class="project-links">
+            <span class="project-coming-soon">🚧 已完成，即将发布</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EasyMD -->
+      <div class="project-row">
+        <div class="project-screenshot">
+          <img src="images/easymd-screenshot.png" alt="EasyMD">
+        </div>
+        <div class="project-info">
+          <h3>EasyMD</h3>
+          <p class="project-desc">轻量级 Markdown 编辑器 —— 写论文笔记需要好用的编辑器，所以又让 AI 做了一个。双击打开即用，桌面版跨平台。</p>
+          <ul class="project-features">
+            <li>Markdown 实时渲染预览</li>
+            <li>代码语法高亮</li>
+            <li>GFM 语法完整支持</li>
+            <li>浏览器版 ~50KB，桌面版跨平台</li>
+          </ul>
+          <div class="project-tags">
+            <span>Python</span><span>Electron</span><span>HTML/CSS/JS</span><span>AI 驱动开发</span>
+          </div>
+          <div class="project-links">
+            <span class="project-coming-soon">🚧 已完成，即将发布</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 碎碎念 -->
+    <section id="fun" class="section">
+      <h2 class="section-title">碎碎念</h2>
+      <p class="section-subtitle">科研之外的另一面</p>
+
+      <div class="fun-card">
+        <div class="fun-icon">🍚</div>
+        <h3>没有人比我更爱吃饭</h3>
+        <p>研究大豆驯化的人，最懂一颗种子如何养活世界 —— 因为我就是被养活的那个人。对美食的热爱是认真的、纯粹的、毫无保留的。</p>
+      </div>
+
+      <div class="fun-card">
+        <div class="fun-icon">🤖</div>
+        <h3>不会写代码，但能让 AI 写</h3>
+        <p>我不写代码，我定义问题。AI 帮我实现，我来验证和迭代。两个完整应用就是这么出来的 —— 没敲过一行代码，但每个功能都是我想要的。</p>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title">想聊聊？</h2>
+      <p class="contact-desc">对大豆驯化研究感兴趣，或者想聊聊 AI 辅助科研，随时联系我。</p>
+      <div class="contact-links">
+        <a href="https://github.com/orangeUU" target="_blank" class="contact-card">
+          <span class="cc-icon">🐙</span>
+          <div>
+            <div class="cc-label">GitHub</div>
+            <div class="cc-value">orangeUU</div>
+          </div>
+        </a>
+        <a href="mailto:2211736665@qq.com" class="contact-card">
+          <span class="cc-icon">✉️</span>
+          <div>
+            <div class="cc-label">邮箱</div>
+            <div class="cc-value">2211736665@qq.com</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 滚动高亮脚本 -->
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.sidebar-nav a, #mobileNav a');
+
+    function updateActiveNav() {
+      let current = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        if (window.scrollY >= top) {
+          current = sec.id;
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-section') === current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav);
+    updateActiveNav();
+
+    // 移动端菜单
+    const menuBtn = document.getElementById('menuBtn');
+    const overlay = document.getElementById('mobileOverlay');
+    const drawer = document.getElementById('mobileDrawer');
+
+    function openMenu() {
+      overlay.style.display = 'block';
+      drawer.style.display = 'flex';
+      requestAnimationFrame(() => {
+        overlay.classList.add('open');
+        drawer.classList.add('open');
+      });
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('open');
+      drawer.classList.remove('open');
+      setTimeout(() => {
+        overlay.style.display = 'none';
+        drawer.style.display = 'none';
+      }, 300);
+    }
+
+    menuBtn.addEventListener('click', openMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // 移动端点击导航后关闭菜单
+    document.querySelectorAll('#mobileNav a').forEach(a => {
+      a.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+  </script>
+
+</body>
+</html>
